@@ -1,7 +1,7 @@
-import './App.css';
+import React, { Component } from 'react';
 
 function App() {
-  return <div className='App'>ㅇㄴㅁ</div>;
+  return <div className="App">Blog!</div>;
 }
 
 export default App;
