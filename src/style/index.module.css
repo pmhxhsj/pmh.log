@@ -14,6 +14,24 @@
 }
 
 .Footer {
+  width: 100%;
+  height: 50px;
+  left: 100px;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  border-top: 0.5px solid rgb(35, 10, 68);
+  color: #808080;
+  font-size: 11px;
+}
+
+.Footer p a {
+  color: #808080;
+  font-size: 9px;
+}
+
+.Footer a:visited {
+  color: #808080;
 }
 
 .Margin {
@@ -33,4 +51,27 @@
   font-size: 18px;
   width: 150px;
   padding: 10px;
+}
+
+.MainDiv {
+  margin-top: 50px;
+  width: 800px;
+  text-align: center;
+  display: flex;
+}
+
+.MainDiv div {
+  flex: 1;
+  height: 200px;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.MainDiv div:nth-child(2) {
+  flex: 1;
+  height: 200px;
+  background-color: rgb(153, 94, 221);
+  margin-left: 20px;
+  margin-right: 20px;
 }
