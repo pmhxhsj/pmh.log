@@ -1,25 +1,23 @@
 import React from 'react';
-import Header from './component/Header';
-import Footer from './component/Footer';
-import styles from './style/index.module.css';
-import DashImage from './SteadyLife_Dash.png';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Calander from './pages/Calendar';
+import DashBoard from './pages/DashBoard';
+import Edit from './pages/Edit';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className={styles.Margin}>
-        <h1>🏠 Dash Board</h1>
-        <br />
-        <img src={DashImage} alt="dashImage" width="800px" />
-        <div className={styles.MainDiv}>
-          <div>das</div>
-          <div>das</div>
-          <div>das</div>
-        </div>
-        <Footer />
+    <BrowserRouter>
+      <div className="App">
+        <h2>das</h2>
+        <Routes>
+          <Route path="/" element={<DashBoard />} />
+          <Route path="/Calendar" element={<Calander />} />
+          <Route path="/Edit" element={<Edit />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
